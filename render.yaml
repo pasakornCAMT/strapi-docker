@@ -3,7 +3,7 @@ services:
     name: strapi-docker
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: free
+    plan: starter
     region: singapore
     buildCommand: yarn install && yarn build
     healthCheckPath: /_health
@@ -31,4 +31,5 @@ services:
 
 databases:
   - name: strapi-docker
-    plan: free
+    plan: starter
+    region: singapore
