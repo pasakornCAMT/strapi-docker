@@ -28,7 +28,3 @@ services:
         generateValue: true
       - key: API_TOKEN_SALT
         generateValue: true
-
-databases:
-  - name: strapi-docker
-    plan: free
