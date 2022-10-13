@@ -6,6 +6,7 @@ services:
     plan: free
     region: singapore
     buildCommand: yarn install && yarn build
+    startCommand: yarn start
     healthCheckPath: /_health
     disk:
       name: strapi-docker-uploads
@@ -28,3 +29,7 @@ services:
         generateValue: true
       - key: API_TOKEN_SALT
         generateValue: true
+
+databases:
+  - name: strapi-docker
+    plan: free
