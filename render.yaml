@@ -31,5 +31,5 @@ services:
 
 databases:
   - name: strapi-docker
-    plan: starter
+    plan: free
     region: singapore
