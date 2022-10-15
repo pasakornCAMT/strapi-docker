@@ -27,8 +27,6 @@ services:
       - '1337:1337'
     networks:
       - strapi-docker
-    deploy:
-      endpoint_mode: dnsrr
     depends_on:
       - strapi-dockerDB
       
