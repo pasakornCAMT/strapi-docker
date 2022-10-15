@@ -43,9 +43,7 @@ services:
     volumes:
       - strapi-docker-data:/var/lib/postgresql/data/ #using a volume
       #- ./data:/var/lib/postgresql/data/ # if you want to use a bind folder
-
-    ports:
-      - '5432:5432'
+      
     networks:
       - strapi-docker
 
